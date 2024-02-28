@@ -68,7 +68,7 @@ def save():
 
         return flask.redirect('/home')
     else:
-        return "输入密码错误!"
+        return "Password input error!"
 
 
-app.run(host='192.168.2.8', port=8090)#当前ip+端口号
+app.run(host='0.0.0.0', port=8090)
