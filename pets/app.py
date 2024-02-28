@@ -37,7 +37,7 @@ def upload():
     return flask.render_template('upload.html')
 
 
-@app.route('/save', methods=['GET', 'POST'])#当你按下upload.html中的sumbit按键上传数据表单时会进入这个save函数
+@app.route('/save', methods=['GET', 'POST'])
 def save():
     img_pwd = flask.request.form.get('pwd')
     if img_pwd == pwd:
