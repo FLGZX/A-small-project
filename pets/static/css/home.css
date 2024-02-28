@@ -1,0 +1,53 @@
+::-webkit-scrollbar{
+	width: 0;
+}
+.description{
+	margin-left: 30px;
+	position: fixed;
+	top: 10%;
+	left: 15%;
+	z-index: 300;
+	line-height: 1.5;
+	opacity: 0;
+	animation: slide_right 0.5s linear forwards;
+	animation-delay: 0.5s;
+}
+p{
+	margin-top: 30px;
+	font-weight: 700;
+	font-size: 30px;
+}
+.sc{
+	color: #00BCD4;
+}
+.de{
+	color: #fff;
+	background-color: rgb(1,105,178);
+	padding: 2px 15px;
+	border-radius: 30px;
+	font-weight: 400;
+}
+.show{
+	position: fixed;
+	top: 25%;
+	left: 15%;
+	z-index: 300;
+	width: 50%;
+	height: 72%;
+	overflow: scroll;
+	background: rgba(0,0,0,0);
+	opacity: 0;
+	animation: fade_in 0.5s linear forwards;
+	animation-delay: 1s;
+}
+.show-box{
+	width: 234px;
+	height: 288px;
+	float: left;
+	margin: 30px;
+}
+.show-img{
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+

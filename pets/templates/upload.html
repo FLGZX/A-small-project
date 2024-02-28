@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block front %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="css/upload.css"/>
+{% endblock %}
+
+{% block main %}
+<div class="description">
+	<p>Select a picture of your pet to upload<br>
+	<span class="token">Password</span> is required</p>
+</div>
+<form action="/save" method="post" enctype="multipart/form-data" class="upload">
+	<input type="text" name="name" placeholder="Name" required/>
+	<input type="text" name="words" placeholder="Please describe your pet in one sentence" required/>
+	<input type="text" name="pwd" placeholder="Password" required/>
+	<input type="file" name="image" class="image" required/>
+	<button class="submit">submit</button>
+</form>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+
+{% block front %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="css/details.css"/>
+{% endblock %}
+
+{% block main %}
+<div class="show">
+	<div class="show-nav">
+		<span id="moveLeft" class="show-arrow">
+			<img src="img/arrowleft.png" />
+		</span>
+		<span id="moveRight" class="show-arrow">
+			<img src="img/arrowright.png" />
+		</span>
+	</div>
+	{% for each in data %}
+	<div class="show-item">
+		<div class="show-shadow"></div>
+		<img src="{{ each['img_url'] }}" class="show-img" />
+		<div class="show-words">
+			<h4><span>Hi</span>, there</h4>
+			<h2>This is my pet {{ each['img_name'] }} <br>{{ each['img_words'] }} </h2>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script  src="js/details.js"></script>
+{% endblock %}

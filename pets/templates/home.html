@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+
+{% block front %}
+{{ super() }}
+<link rel="stylesheet" type="text/css" href="css/home.css"/>
+{% endblock %}
+
+{% block main %}
+<div class="description">
+	<p>The pictures below are my lovely pets<br>
+	<span class="sc">scroll ↓ </span> to see more and
+	click the <span class="de">Details</span> to meet them</p>
+</div>
+<div class="show">
+	{% for each in data %}
+	<div class="show-box">
+		<img src="{{ each['img_url'] }}" class="show-img"/>
+	</div>
+	{% endfor %}
+</div>
+{% endblock %}
