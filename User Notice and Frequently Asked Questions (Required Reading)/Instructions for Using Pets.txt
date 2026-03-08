@@ -1,60 +1,31 @@
-Error response:
-
-
-
-After entering Pets, run the app. py file (using Python IDLE while keeping version 3.12, which can be downloaded from the official website)
-
-If there is an error message indicating that Flask cannot be applied, please open the cmd window with the win+R key and use the command "pip install Flask" to install Flask (using version 3.12)
-
-If there is an invalid IP address, open cmd and use "ipconfig" to find the wireless LAN adapter WLAN>IPv4 address. After copying the address, find the last line of app. py and copy the IP address into single quotes to solve the problem
-
-Correct operation case:
-
-*Serving Flask app 'app'
-
-*Debug mode: off
-
-[31m [1mWANING: This is a development server. Do not use it in a production deployment. Use a production WSGI server install. [0m]
-
-*Running on http://192.168.2.8:8090
-
-[33mPress CTRL+C to quit [0m]
-
-
-
-
+Error Response:
+﻿
+After entering the "Pets" folder, run the app.py file (use Python IDLE with version 3.12, which can be downloaded from the official Python website).
+﻿
+If you get an error saying Flask is not installed, open the Command Prompt window by pressing Win + R, type cmd, and run the following command to install Flask:
+pip install Flask
+(Ensure you are using Python version 3.12.)
+﻿
+If you receive an invalid IP address error, open Command Prompt and run the command ipconfig. Look for the IPv4 address under "Wireless LAN adapter WLAN". Copy that address, then go to the last line of app.py and paste the IP address inside single quotes to resolve the issue.
+﻿
+Correct operation example:
+﻿
+text
+* Serving Flask app 'app'
+* Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+* Running on http://192.168.2.8:8090
+Press CTRL+C to quit
 Work Introduction:
-
-
-
-The title of this work is pets
-
-It is a local area network website running server
-
-Used to upload one's local pet to the server and share it with trusted partners on the same LAN
-
-Supports pet naming, uploading images, and local storage functions
-
-
-
+﻿
+The title of this project is Pets.
+It is a local area network (LAN) based web server.
+The purpose is to allow users to upload their pet's information to the server and share it with trusted partners within the same LAN.
+It supports naming pets, uploading images, and local storage functionality.
+﻿
 Usage:
-
-
-
-After confirming that the app. py server launcher is running (and confirming normal operation)
-
-Enter the website address in any browser: current ID+colon+port number
-
-Then the website can run normally
-
-
-
-Administrator's note:
-
-
-
-This website is only for entertainment purposes, and you can share pet photos and names through the website
-
-When others log in to this website, it is necessary to ensure that they are using the same local area network (WiFi) as you
-
-At the same time, when the server is started, website visitors can be monitored from the Python runtime window
+﻿
+After ensuring that the app.py server launcher is running (and confirming it is functioning properly),
+enter the following address in any browser:
+current IP address:port number
+The website will then run normally.
